@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@330&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --coolblue-color: #0090e3; 
+    --typenummer-color: #285dab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 730px;
+    height: 610px;
+    border: solid #DDDD 1px; 
+}
+
+.header {
+    background-color: var(--coolblue-color);
+    height: 15%;
+}
+
+.coolblue-logo {
+    margin: 0 0 0 5%;
+    position: relative;
+    top:-13px;
+    height: 130%;
+    clip-path: inset(11% 0 12.2% 0);
+}
+
+.slogan {
+    font-family: "Roboto Slab", sans-serif;
+    color: var(--coolblue-color)
+}
+
+.type {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--typenummer-color)
+}
+.arrow {
+    filter: invert(97%) sepia(100%) saturate(1%) hue-rotate(267deg) brightness(102%) contrast(101%);
+    margin: 0 5px 0 0;
+}
