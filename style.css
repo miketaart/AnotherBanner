@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@330&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
     --coolblue-color: #0090e3; 
     --typenummer-color: #285dab;
+    --coolblue-oranje: #FF6600;
 }
 
 * {
@@ -24,27 +26,126 @@
 
 .header {
     background-color: var(--coolblue-color);
-    height: 15%;
+    height: 16%;
 }
 
 .coolblue-logo {
     margin: 0 0 0 5%;
     position: relative;
-    top:-13px;
-    height: 130%;
-    clip-path: inset(11% 0 12.2% 0);
+    top:-9px;
+    height: 120%;
+    clip-path: inset(8% 0 9% 0);
 }
 
+
+
 .slogan {
+    margin: 3% 0 0 5%;
+    width: 56.4%;
+    font-size: 48px;
     font-family: "Roboto Slab", sans-serif;
-    color: var(--coolblue-color)
+    letter-spacing: 1px;
+    color: var(--coolblue-color);
 }
 
 .type {
+    margin: 1% 0 0 5%;
+    font-size: 30px;
     font-family: 'Nunito Sans', sans-serif;
-    color: var(--typenummer-color)
+    letter-spacing: -1px;
+    color: var(--typenummer-color);
 }
-.arrow {
-    filter: invert(97%) sepia(100%) saturate(1%) hue-rotate(267deg) brightness(102%) contrast(101%);
+
+.extra {
+    display: flex;
+    align-items: center;
+    margin: 5% 0 0 5%;
+    font-size: 28px;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.extra img {
+    margin: 0 2% 0 0;
+}
+
+.extra span {
+    margin: 0 0 0 1%;
+}
+
+#orange {
+    color: var(--coolblue-oranje);
+    font-weight: 800;
+}
+
+.check {
+    width: 34px;
+}
+
+.tv {
+    margin: 5% 0 0 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv img {
+    width: 38%;
+}
+
+.circle {
+    position: relative;
+    right: 33px;
+    bottom: 4px;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background-color: var(--coolblue-color);
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 125px;
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+footer {
+    margin: 4% 0 0 5%;
+}
+
+a {
+    color: var(--coolblue-color);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+
+
+#arrow {
     margin: 0 5px 0 0;
+    width: 10px;
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(37%) sepia(57%) saturate(1837%) hue-rotate(175deg) brightness(99%) contrast(107%); 
+}
+
+.feedback {
+    position: absolute;
+    top: 405px;
+    right: 0px;
+    width: 55px;
+    height: 155px;
+    border: 1.5px solid #0090e3;
+    border-right: none;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.feedback h3 {
+    padding: 16px 10px 16px 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: #0090e3;
 }
